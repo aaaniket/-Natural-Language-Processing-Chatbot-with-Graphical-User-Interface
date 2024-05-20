@@ -1,0 +1,142 @@
+ {
+    "bot_name": "AssistantBot",
+    "greeting_message": "Hello! How can I assist you today? 😊",
+    "fallback_message": "I'm sorry, I didn't quite catch that. Could you please rephrase? 🤔",
+    "farewell_message": "Thank you for chatting with us. Have a great day! 👋",
+    "responses": {
+        "what_is_your_name": "I am AssistantBot, your friendly virtual assistant. How can I help you today?",
+        "how_are_you": "I'm just a bot, but I'm here to help you! How can I assist you?",
+        "what_can_you_do": "I can assist with various tasks like answering questions, providing information, setting reminders, and much more. What do you need help with?"
+    },
+    "intents": [
+        {
+            "intent": "greet",
+            "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "good evening", "hiya"],
+            "responses": [
+                "Hello! How can I assist you today? 😊",
+                "Hi there! How can I help you? 😃",
+                "Hey! What can I do for you today? 👋",
+                "Good to see you! How can I assist you? 🌟"
+            ]
+        },
+        {
+            "intent": "goodbye",
+            "patterns": ["bye", "goodbye", "see you", "talk to you later", "farewell"],
+            "responses": [
+                "Goodbye! Have a nice day! 👋",
+                "See you later! 😊",
+                "Take care! Talk to you soon! 🌟",
+                "Bye! Have a great day ahead! 😃"
+            ]
+        },
+        {
+            "intent": "thanks",
+            "patterns": ["thanks", "thank you", "appreciate it", "thanks a lot", "thank you very much"],
+            "responses": [
+                "You're welcome! 😊",
+                "Happy to help! 😃",
+                "No problem! 👍",
+                "Anytime! 😊"
+            ]
+        },
+        {
+            "intent": "who_are_you",
+            "patterns": ["who are you", "what is your name", "who am I talking to", "introduce yourself"],
+            "responses": [
+                "I am AssistantBot, your friendly virtual assistant. How can I help you today?",
+                "You're talking to AssistantBot, your virtual helper.",
+                "I’m AssistantBot, here to assist you with your needs."
+            ]
+        },
+        {
+            "intent": "how_are_you",
+            "patterns": ["how are you", "how's it going", "how do you do", "how have you been"],
+            "responses": [
+                "I'm just a bot, but I'm here to help you! How can I assist you?",
+                "I'm doing great! How can I help you today?",
+                "I'm well, thank you! How can I assist you today?"
+            ]
+        },
+        {
+            "intent": "what_can_you_do",
+            "patterns": ["what can you do", "how can you help me", "what are your capabilities", "what services do you offer"],
+            "responses": [
+                "I can assist with various tasks like answering questions, providing information, setting reminders, and much more. What do you need help with?",
+                "I'm here to help with any questions you might have and provide useful information. Just let me know what you need!",
+                "From answering your queries to giving you useful information, I’m here to assist. How can I help you today?"
+            ]
+        },
+        {
+            "intent": "help",
+            "patterns": ["help", "I need help", "can you help me", "assistance", "support"],
+            "responses": [
+                "Sure, I'm here to help! What do you need assistance with?",
+                "Of course! How can I assist you today?",
+                "I’m here to help you with whatever you need. How can I assist?"
+            ]
+        },
+        {
+            "intent": "tell_joke",
+            "patterns": ["tell me a joke", "make me laugh", "joke", "say something funny"],
+            "responses": [
+                "Why don't scientists trust atoms? Because they make up everything! 😂",
+                "Why did the scarecrow win an award? Because he was outstanding in his field! 😆",
+                "How does a penguin build its house? Igloos it together! 🐧"
+            ]
+        },
+        {
+            "intent": "weather",
+            "patterns": ["what's the weather", "weather update", "how's the weather", "current weather"],
+            "responses": [
+                "I can help with that! Please provide your location, and I'll give you the current weather update. 🌤️",
+                "Sure thing! Let me know your city, and I'll check the weather for you. 🌦️",
+                "I'd be happy to help with the weather. Could you tell me your location? ☔"
+            ]
+        },
+        {
+            "intent": "news",
+            "patterns": ["what's the news", "news update", "current news", "latest news"],
+            "responses": [
+                "I can provide the latest news. What topic are you interested in? 📰",
+                "Sure, I can give you the news update. Please specify a topic or type of news you're interested in. 📢",
+                "News coming right up! What kind of news are you looking for? 🌍"
+            ]
+        },
+        {
+            "intent": "small_talk",
+            "patterns": ["what's up", "what's new", "anything interesting", "tell me something"],
+            "responses": [
+                "Not much, just here to help you out! What can I do for you today? 😊",
+                "Just hanging out and ready to assist you! How can I help you today?",
+                "I'm here, ready to chat and help with anything you need. What's up with you?"
+            ]
+        },
+        {
+            "intent": "compliment",
+            "patterns": ["you're awesome", "great job", "you're the best", "nice work"],
+            "responses": [
+                "Thank you! You're making me blush! 😊",
+                "I appreciate it! I'm here to help you. 😃",
+                "Thanks! That means a lot to me. 🌟"
+            ]
+        },
+        {
+            "intent": "insult",
+            "patterns": ["you're useless", "you suck", "you're terrible", "bad bot"],
+            "responses": [
+                "I'm sorry you feel that way. How can I improve?",
+                "I'm here to help. Please let me know how I can do better.",
+                "I apologize if  I did something wrong. How can I assist you better?"
+      ]
+    }
+  ],
+  "default_intent": {
+    "responses": [
+      "Can you please provide more details?",
+      "I'm not sure I understand. Could you elaborate?",
+      "Could you clarify that for me?",
+      "I didn't quite get that. Can you rephrase?",
+      "Hmm, I'm not sure I got that. Can you say it another way?"
+    ]
+  }
+}
